@@ -1,0 +1,54 @@
+/*css reset */
+body,p,h1,h2,h3,h4,h5,h6,dl,dd,blockquote {
+    margin:0;
+    font-size:12px;
+    font-family: "微软雅黑","Microsoft Yahei","Hiragino Sans GB",tahoma,arial,"宋体" !important
+}
+ol,ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+a { text-decoration:none; }
+img { border:none; }
+
+
+/* global style */
+html{ 
+    font-size:32px;
+    height: 100%
+}
+body {   
+    height: 100%;
+    font-size: 16px;
+	max-width: 100%;
+	overflow-x: hidden;
+	vertical-align: top;
+
+}
+ol {
+    list-style: decimal inside;
+}
+
+.section {
+    padding: .375rem;
+    margin-bottom: .125rem;
+    background: #fff;
+    color: #666;
+}
+/*
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    body { line-height: 1.4 }
+}*/
+@media only screen 
+  and (min-device-width: 375px) {
+    html{ font-size:37.5px;}
+}
+
+
+
+
+

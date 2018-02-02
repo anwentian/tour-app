@@ -1,0 +1,258 @@
+[
+  {
+    "area": "国内",
+    "hotdest": [
+      {
+        "dest": "三亚",
+        "img": "static/img/0/sanya.jpg"
+      },
+      {
+        "dest": "云南",
+        "img": "static/img/0/yunnan.jpg"
+      },
+      {
+        "dest": "厦门",
+        "img": "static/img/0/xiamen.jpg"
+      },
+      {
+        "dest": "上海",
+        "img": "static/img/0/shanghai.jpg"
+      },
+      {
+        "dest": "青岛",
+        "img": "static/img/0/qingdao.jpg"
+      },
+      {
+        "dest": "长白山",
+        "img": "static/img/0/changbaishan.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "东北",
+        "city":["长白山","盘锦","雪乡","哈尔滨"]
+      },
+      {
+        "name": "西北",
+        "city":["青海湖","西安","伊犁","敦煌","内蒙"]
+      },
+      {
+        "name": "华东",
+        "city":["厦门","杭州","上海","青岛","义乌", "乌镇"]
+      },
+      {
+        "name": "华南",
+        "city":["三亚","桂林","涠洲岛","长隆","博鳌", "巴马"]
+      },
+      {
+        "name": "华北",
+        "city":["北京","平遥古城","天津","五台山","山西"]
+      }
+    ]
+  },
+  {
+    "area": "港澳",
+    "hotdest": [
+      {
+        "dest": "香港",
+        "img": "static/img/1/hongkong.jpg"
+      },
+      {
+        "dest": "澳门",
+        "img": "static/img/1/macao.jpg"
+      },
+      {
+        "dest": "迪士尼",
+        "img": "static/img/1/disney.jpg"
+      },
+      {
+        "dest": "渔人码头",
+        "img": "static/img/1/fisherman.jpg"
+      },
+      {
+        "dest": "维多利亚港",
+        "img": "static/img/1/victoriaHarbour.jpg"
+      },
+      {
+        "dest": "大三巴牌坊",
+        "img": "static/img/1/dasanba.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "港澳",
+        "city":["香港","澳门","维多利亚港","海洋乐园"]
+      }
+    ]
+  },
+  {
+    "area": "日本",
+    "hotdest": [
+      {
+        "dest": "东京",
+        "img": "static/img/2/tokyo.jpg"
+      },
+      {
+        "dest": "大阪",
+        "img": "static/img/2/osaka.jpg"
+      },
+      {
+        "dest": "北海道",
+        "img": "static/img/2/hokkaido.jpg"
+      },
+      {
+        "dest": "冲绳",
+        "img": "static/img/2/okinawa.jpg"
+      },
+      {
+        "dest": "奈良",
+        "img": "static/img/2/nara.jpg"
+      },{
+        "dest": "九州",
+        "img": "static/img/2/kyushu.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "日本",
+        "city":["本州","北海道","东京","大阪","京都","冲绳","熊本","箱根","奈良"]
+      }
+    ]
+  },
+  {
+    "area": "东南亚",
+    "hotdest": [
+      {
+        "dest": "泰国",
+        "img": "static/img/3/thailand.jpg"
+      },
+      {
+        "dest": "新加坡",
+        "img": "static/img/3/singapore.jpg"
+      },
+      {
+        "dest": "越南",
+        "img": "static/img/3/vietNam.jpg"
+      },
+      {
+        "dest": "柬埔寨",
+        "img": "static/img/3/cambodia.jpg"
+      },
+      {
+        "dest": "马来西亚",
+        "img": "static/img/3/malaysia.jpg"
+      },
+      {
+        "dest": "菲律宾",
+        "img": "static/img/3/philippines.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "东南亚",
+        "city":["泰国","普吉岛","新加坡","沙巴","清迈","苏梅岛"]
+      }
+    ]
+  },
+  {
+    "area": "海岛",
+    "hotdest": [
+      {
+        "dest": "巴厘岛",
+        "img": "static/img/4/bali.jpg"
+      },
+      {
+        "dest": "普吉岛",
+        "img": "static/img/4/phuket.jpg"
+      },
+      {
+        "dest": "长滩岛",
+        "img": "static/img/4/langbeach.jpg"
+      },
+      {
+        "dest": "大溪地",
+        "img": "static/img/4/daxi.jpg"
+      },
+      {
+        "dest": "塞班岛",
+        "img": "static/img/4/saipan.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "海岛",
+        "city":["巴厘岛","芽庄","普吉岛","塞班岛","马尔代夫","沙巴","苏梅岛","塞舌尔"]
+      }
+    ]
+  },
+  {
+    "area": "欧洲",
+    "hotdest": [
+      {
+        "dest": "意大利",
+        "img": "static/img/5/italy.jpg"
+      },
+      {
+        "dest": "法国",
+        "img": "static/img/5/france.jpg"
+      },
+      {
+        "dest": "瑞士",
+        "img": "static/img/5/switzerland.jpg"
+      },
+      {
+        "dest": "德国",
+        "img": "static/img/5/germany.jpg"
+      },
+      {
+        "dest": "西班牙",
+        "img": "static/img/5/spain.jpg"
+      },
+      {
+        "dest": "英国",
+        "img": "static/img/5/uk.jpg"
+      }
+    ],
+    "areaList": [
+        {
+            "name": "欧洲",
+            "city":["希腊","俄罗斯","法国","意大利","德国","瑞士","西班牙","葡萄牙","芬兰","英国","爱尔兰","比利时","丹麦","奥地利","捷克","荷兰","瑞典"]
+        }
+    ]
+  },
+  {
+    "area": "美洲",
+    "hotdest": [
+      {
+        "dest": "美国",
+        "img": "static/img/6/usa.jpg"
+      },
+      {
+        "dest": "加拿大",
+        "img": "static/img/5/france.jpg"
+      },
+      {
+        "dest": "黄石公园",
+        "img": "static/img/5/switzerland.jpg"
+      },
+      {
+        "dest": "墨西哥",
+        "img": "static/img/5/germany.jpg"
+      },
+      {
+        "dest": "夏威夷",
+        "img": "static/img/5/spain.jpg"
+      },
+      {
+        "dest": "巴西",
+        "img": "static/img/5/uk.jpg"
+      }
+    ],
+    "areaList": [
+      {
+        "name": "美洲",
+        "city":["美国","加拿大","洛杉矶","纽约","西雅图","夏威夷","华盛顿","巴西","墨西哥","阿根廷"]
+      }
+    ]
+  }
+]
