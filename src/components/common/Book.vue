@@ -1,14 +1,42 @@
 <template>
   <div name="Book" class="book-bar">
-      <div class="collect">收藏</div>
-      <div class="booking">预定</div>
+      <div v-if="!collected" class="box" @click="collect">收藏</div>
+      <div v-if="collected" class="box collected">已收藏</div>
+      <div class="box booking">预定</div>
     </div>
 
 </template>
 
 <script>
   export default {
-    name: 'Book'
+    name: 'Book',
+    props: {
+      item: {
+        type: Object
+      }
+    },
+    data () {
+      return {
+        isCollected: false
+      }
+    },
+    computed: {
+      collected () {
+        let list = JSON.parse(window.localStorage.collectList)
+        return list.find(p => p.id === this.item.productId) || this.isCollected
+      }
+    },
+    methods: {
+      collect () {
+        this.isCollected = true
+        console.log(this.collected)
+        let id = this.item.productId
+        this.$store.commit('collectProduct', { id })
+        setTimeout(function () {
+          console.log(JSON.parse(window.localStorage.collectList))
+        }, 200)
+      }
+    }
   }
 </script>
 
@@ -26,11 +54,13 @@
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
-.collect {
-    flex:1;
+.box {
+  flex:1;
+}
+.collected {
+  background:#ddd;
 }
 .booking {
-    flex:1;
     background: #c5129a;
     color: #fff;
 }

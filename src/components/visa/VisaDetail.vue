@@ -3,7 +3,6 @@
     <v-header :title="'签证详情'"></v-header>
     <info class="margin-b" :product="visa"></info>
     <detail-text :detail="visa.detail"></detail-text>
-    <book></book>
   </div>
   
 </template>
@@ -12,7 +11,6 @@
 import Header from '@/components/Header'
 import Info from '@/components/common/Info'
 import DetailText from './DetailText'
-import Book from '@/components/common/Book'
 export default {
   name: 'VisaDetail',
   props: {
@@ -38,8 +36,7 @@ export default {
   components: {
     'v-header': Header,
     'info': Info,
-    'detail-text': DetailText,
-    'book': Book
+    'detail-text': DetailText
   },
   watch: {
     $route () {

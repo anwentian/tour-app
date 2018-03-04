@@ -41,7 +41,8 @@ const state = {
       id: 2,
       show: false
     }
-  ]
+  ],
+  collectList: JSON.parse(window.localStorage.collectList || '[]')
 }
 
 const mutations = {
@@ -70,6 +71,15 @@ const mutations = {
   },
   changClassify (state, {classify}) {
     state.classify = classify
+  },
+  collectProduct (state, { id }) {
+    const record = state.collectList.find(p => p.id === id)
+    if (!record) {
+      state.collectList.push({
+        id,
+        collected: true
+      })
+    }
   }
 }
 
@@ -82,11 +92,18 @@ const actions = {
   }
 }
 
+const localStoragePlugin = store => {
+  store.subscribe((mutation, { collectList }) => {
+    window.localStorage.setItem('collectList', JSON.stringify(collectList))
+  })
+}
+
 export default new Vuex.Store({
   state,
   // getters,
   actions,
-  mutations
+  mutations,
+  plugins: [localStoragePlugin]
 })
 
 function changShow (type, id) {

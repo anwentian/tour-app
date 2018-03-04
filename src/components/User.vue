@@ -19,6 +19,13 @@
           </a>
         </li>
         <li class="user-list">
+          <router-link tag="div"  :to="{path:'/products_lists',query:{collect:'collected'}}">
+          <a class="collected" href="#">
+            我的收藏
+          </a>
+          </router-link>
+        </li>
+        <li class="user-list">
           <a class="user-info" href="#">
             常用信息
             <span class="right">旅客&地址&发票</span>
@@ -114,6 +121,9 @@ export default {
 }
 .order {
   background:url('../assets/images/user-order.png') left center no-repeat;
+}
+.collected {
+  background:url('../assets/images/user-collected.png') left center no-repeat;  
 }
 .user-info {
   background:url('../assets/images/user-info.png') left center no-repeat;

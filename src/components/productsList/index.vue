@@ -40,7 +40,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['clicked', 'showSort', 'sort']),
+    ...mapState(['clicked', 'showSort', 'sort', 'allProducts', 'collectList']),
     type () {
       return this.$route.query.type
     },
@@ -61,8 +61,10 @@ export default {
     title () {
       if (this.type) {
         return this.tour[this.type].name
-      } else {
+      } else if (this.$route.query.dest) {
         return decodeURI(this.$route.query.dest)
+      } else if (this.$route.query.collect) {
+        return '我的收藏'
       }
     },
     view () {
@@ -120,6 +122,7 @@ export default {
       const type = this.type
       const theme = this.$route.query.theme
       const dest = this.$route.query.dest
+      const collected = this.$route.query.collect
       if (type) {
         if (theme) {
           this.productsList = this.tour[type].products.filter(product => {
@@ -129,7 +132,18 @@ export default {
           this.productsList = this.tour[this.type].products
         }
       } else if (dest) {
-        this.productsList = this.$store.state.allProducts.filter(product => { return product.dest.indexOf(decodeURI(dest)) > -1 })
+        this.productsList = this.allProducts.filter(product => { return product.dest.indexOf(decodeURI(dest)) > -1 })
+      } else if (collected) {
+        let tempArr = []
+        console.log(this.collectList)
+        for (let i = 0; i < this.collectList.length; i++) {
+          let id = this.collectList[i].id
+          console.log(id)
+          let arr = this.allProducts.find(p => p.productId === id)
+          tempArr.push(arr)
+        }
+        this.productsList = tempArr
+        console.log(tempArr)
       }
     }
   },

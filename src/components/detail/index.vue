@@ -16,6 +16,7 @@
         <terms v-if="terms" v-for="(terms,key,index) in product.notic" :key="key" :terms="terms"></terms>
       </div>
     </div>
+    <book :item = "product"></book>
   </div>
   
 </template>
@@ -28,6 +29,7 @@
   import Schedule from './Schedule'
   import Cost from './Cost'
   import Terms from './Terms'
+  import Book from '@/components/common/Book'
   export default {
     name: 'Detail',
     components: {
@@ -37,7 +39,8 @@
       'feature': Feature,
       'schedule': Schedule,
       'cost': Cost,
-      'terms': Terms
+      'terms': Terms,
+      'book': Book
     },
     props: {
       tour: {
